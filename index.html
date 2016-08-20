@@ -7,54 +7,52 @@
     <!-- load jQuery and Bootstrap for fresh look -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-<style>
-body {
 
-}
-    h1 {
-    font-size: 2em;
-    }
-    #finalText {
-     
-    }
-</style>
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
+
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <!--
-            <ul class="list-inline">
-                <li><a id="cz" href="#">CZ</a></li>
-                <li><a id="en" href="#">EN</a></li>
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li id="cz" role="presentation" class="current"><a href="#">CZ</a></li>
+                <li id="en" role="presentation"><a href="#">EN</a></li>
             </ul>
-            -->
-            <h1>Nezlomitelná mezera za každou jednoslovní předložkou</h1>
-            <h3>Non-breaking space after each one-letter preposition</h3>
-            <hr>
-            <p>
-                Jednoduchý online nástroj pro vložení HTML nezlomitelné mezery do textového řetězce za každou jednoslovní předložku.
-            </p>
-            <small>
-                Simple online tool for inserting HTML non-breaking space after each one-letter word.
-            </small>
-            <p></p>
-            <small>Více informací: <a target="_blank" href="https://cs.wikipedia.org/wiki/Nezlomitelná_mezera">Nezlomitelná mezera na Wikipedii</a> a
-                <a target="_blank" href="https://www.jakpsatweb.cz/enc/mezera.html">HTML mezera na jakpsatweb.cz</a></small>
-        <p></p>
-        </div>
+        </nav>
+        <h1 class="text-muted">nbsp2preposition</h1>
     </div>
+
+    <div class="jumbotron">
+        <h2 class="cz heading">Nezlomitelná mezera za každou jednoslovní předložkou</h2>
+        <h2 class="en heading">Non-breaking space after each one-letter preposition</h2>
+        <p class="cz paragraph">Nástroj pro vložení HTML nezlomitelné mezery do textového řetězce za každou jednoslovní předložku tak, jak doporučuje typografická norma.</p>
+        <p class="en paragraph">Tool for inserting HTML non-breaking space after each one-letter word according to Czech typography norm.</p>
+
+        <small class="cz links">Více informací: <a target="_blank" href="https://cs.wikipedia.org/wiki/Nezlomitelná_mezera">Nezlomitelná mezera na Wiki</a> a
+            <a target="_blank" href="https://www.jakpsatweb.cz/enc/mezera.html">HTML mezera na jakpsatweb.cz</a></small>
+
+        <small class="en links">More info: <a target="_blank" href="https://en.wikipedia.org/wiki/Non-breaking_space">Non-breaking space on Wiki</a> a
+            <a target="_blank" href="http://www.computerhope.com/jargon/n/nbsp.htm">HTML non-breaking space on Computerhope</a></small>
+    </div>
+
     <div class="row">
         <div class="col-md-6">
-            Original
-                <textarea id="originalText" rows="12" onKeyUp="processText();" onPaste="processText();" class="form-control"></textarea>
+            <label for="originalText">Original</label>
+            <textarea id="originalText" rows="12" onKeyUp="processText();" onPaste="processText();" class="form-control"></textarea>
         </div>
         <div class="col-md-6">
-            Final<br>
-            <span id="finalText"></span>
-        </div>
-    </div>
+            <label for="finalText">Final</label><br>
+            <!-- <span id="finalText"></span> -->
+            <textarea id="finalText" rows="12" class="form-control"></textarea>
+</div>
+</div>
+
+    <footer class="footer">
+        <small>© 2016 Milan Švehla | <a href="https://github.com/felixprojekt/nbsp2preposition/">github</a></small>
+    </footer>
+
 </div>
 
 
@@ -79,6 +77,23 @@ body {
 
 
     }
+
+    //Language switcher
+
+    $('#en').click(function(){
+        event.preventDefault();
+        $(".cz").hide();
+        $(".en").show();
+        $("#cz").removeClass("current");
+        $(this).addClass("current");
+    });
+    $('#cz').click(function(){
+        event.preventDefault();
+        $(".en").hide();
+        $(".cz").show();
+        $("#en").removeClass("current");
+        $(this).addClass("current");
+    });
 
 </script>
 
