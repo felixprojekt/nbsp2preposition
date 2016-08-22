@@ -16,6 +16,7 @@ Ačkoliv nástroj zatím nesplňuje všechna doporučení UJČ (viz [Zalomení �
 
 K vyzkoušení zde: https://felixprojekt.github.io/nbsp2preposition/
 
+
 ## Online tool to insert non-breaking space after each one-letter word.
 Inserting &amp;nbsp; for these strings:
 * After one-letter prepositions k,&nbsp;s,&nbsp;v, z,&nbsp;o,&nbsp;u, a,&nbsp;i
