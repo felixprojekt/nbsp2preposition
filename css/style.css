@@ -81,8 +81,24 @@ h1 {
 h2 {
     margin-top: 0;
 }
+.blue {
+    color: #337ab7;
+}
 .jumbotron p {
     font-size: 1.2em;
+    font-weight: 400;
+}
+#norm-more {
+    display: none;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #efefef;
+    padding: 10px 0 0 20px;
+    margin-bottom: 10px;
+}
+.norm-list li{
+    list-style: circle;
 }
 .container .jumbotron {
     padding-left: 30px;
@@ -91,9 +107,12 @@ h2 {
 .en {
     display: none;
 }
-.nav-pills>li.current a{
-    background: #eee
+.nav>li>a:focus, .nav>li>a:hover {
+    background: none;
 }
-#finalText {
-
+.nav-pills>li.current a{
+    font-weight: 700;
+}
+.form-control[readonly] {
+    background-color: white;
 }
