@@ -14,7 +14,7 @@ Prozatím nástroj vkládá nezlomitelnou mezeru:
 ## Dostupný online
 Ačkoliv nástroj zatím nesplňuje všechna doporučení UJČ (viz [Zalomení řádků a nevhodné výrazy na jejich konci](http://prirucka.ujc.cas.cz/?id=880)), zastane většinu potřebného.
 
-K vyzkoušení zde: https://felixprojekt.github.io/nbsp2preposition/
+K vyzkoušení zde: https://nbsp2preposition.milansvehla.com/
 
 
 ## Online tool to insert non-breaking space after each one-letter word.
@@ -27,5 +27,5 @@ Inserting &amp;nbsp; for these strings:
 * Czech university degrees <a href="https://cs.wikipedia.org/wiki/Akademický_titul" target="_blank">according to this list</a>
 
 ## Dostupný online
-Although not finished yet, can be found here: https://felixprojekt.github.io/nbsp2preposition/
+Although not finished yet, can be found here: https://nbsp2preposition.milansvehla.com/
 
