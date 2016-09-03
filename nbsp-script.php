@@ -3,7 +3,6 @@
 $addNbsp = Array(
 	//one-letter prepositions
     ' a '=>' a&nbsp;',
-    '&nbsp;a '=>'&nbsp;a&nbsp;ahoj',
     ' A '=>' A&nbsp;',
     ' o '=>' o&nbsp;',
     ' O '=>' O&nbsp;',
