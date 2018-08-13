@@ -31,28 +31,33 @@
         <p class="en paragraph">Tool for inserting HTML non-breaking space according to Czech <a href="#" class="norm-link">typography norm</a>.</p>
         <div id="norm-more">
            <div class="cz norm">
-              <span>Prozatím nástroj vkládá nezlomitelnou mezeru:</span>
+               <span>Prozatím nástroj vkládá nezlomitelnou mezeru:</span>
                <ul class="norm-list">
-                <li>Za neslabičné předložky <i>k,&nbsp;s,&nbsp;v,&nbsp;z</i>, slabičné předložky <i>o,&nbsp;u</i> a&nbsp;spojky <i>a,&nbsp;i</i></li>
-                <li>Za značky a zkratky <i>str., obr., tab., s., č., §, #, *, †, tj., tzv., tzn.</i></li>
-                <li>Před značky a zkratky <i>%,&nbsp;hod.,&nbsp;h,&nbsp;°C,&nbsp;Kč,&nbsp;€,&nbsp;kg</i></li>
-                <!-- abbreviations needs script revision
-                <li>Mezi ustálená slovní spojení <i>a.&nbsp;s., s.&nbsp;r.&nbsp;o., mn.&nbsp;č., př.&nbsp;n.&nbsp;l.</i></li>-->
-                <li>Jednotky objemu a povrchu s horním indexem (<i>m², cm³</i> atp.)</li>
-                <li>Akademické a vědecké tituly <a href="https://cs.wikipedia.org/wiki/Akademický_titul" target="_blank">podle tohoto seznamu</a></li>
+                   <li>Za neslabičné předložky <i>k,&nbsp;s,&nbsp;v,&nbsp;z</i>, slabičné předložky <i>o,&nbsp;u</i> a&nbsp;spojky <i>a,&nbsp;i</i></li>
+                   <li>Za značky a zkratky <i>str., obr., tab., s., č., §, #, *, †, tj., tzv., tzn.</i></li>
+                   <li>Před značky a zkratky <i>%,&nbsp;hod.,&nbsp;h,&nbsp;°C,&nbsp;Kč,&nbsp;€,&nbsp;kg</i></li>
+                   <li>Mezi ustálená slovní spojení <i>a.&nbsp;s., s.&nbsp;r.&nbsp;o., mn.&nbsp;č., př.&nbsp;n.&nbsp;l.</i></li>
+                   <li>Jednotky objemu a povrchu s horním indexem (<i>m², cm³</i> atp.)</li>
+                   <li>Akademické a vědecké tituly <a href="https://cs.wikipedia.org/wiki/Akademický_titul" target="_blank">podle tohoto seznamu</a></li>
                </ul>
+               <p>
+                   Pokud se v textu vyskytuje více zkratek a neslabičných předložek za sebou, vloží se nezlomitelná mezera jen za první výskyt.
+               </p>
            </div>
 
             <div class="en norm">
                 <span>Inserting &amp;nbsp; for these strings:</span>
-            <ul class="norm-list">
-                <li>After one-letter prepositions <i>k,&nbsp;s,&nbsp;v, z,&nbsp;o,&nbsp;u, a,&nbsp;i</i></li>
-                <li>After abbreviations <i>str., obr., tab., s., č., §, #, *, †, tj., tzv., tzn.</i></li>
-                <li>Before abbreviations <i>%,&nbsp;hod.,&nbsp;h,&nbsp;°C,&nbsp;Kč,&nbsp;€,&nbsp;kg</i></li>
-                <li>Inside <i>a.&nbsp;s., s.&nbsp;r.&nbsp;o., mn.&nbsp;č., př.&nbsp;n.&nbsp;l.</i></li>
-                <li>For some units (<i>m², cm³</i> etc.)</li>
-                <li>Czech university degrees <a href="https://cs.wikipedia.org/wiki/Akademický_titul" target="_blank">according to this list</a></li>
-            </ul>
+                <ul class="norm-list">
+                    <li>After one-letter prepositions <i>k,&nbsp;s,&nbsp;v, z,&nbsp;o,&nbsp;u, a,&nbsp;i</i></li>
+                    <li>After abbreviations <i>str., obr., tab., s., č., §, #, *, †, tj., tzv., tzn.</i></li>
+                    <li>Before abbreviations <i>%,&nbsp;hod.,&nbsp;h,&nbsp;°C,&nbsp;Kč,&nbsp;€,&nbsp;kg</i></li>
+                    <li>Inside <i>a.&nbsp;s., s.&nbsp;r.&nbsp;o., mn.&nbsp;č., př.&nbsp;n.&nbsp;l.</i></li>
+                    <li>For some units (<i>m², cm³</i> etc.)</li>
+                    <li>Czech university degrees <a href="https://cs.wikipedia.org/wiki/Akademický_titul" target="_blank">according to this list</a></li>
+                </ul>
+                <p>
+                    When there are more matching rules very close each other, only the first match is applied.
+                </p>
             </div>
 
 
