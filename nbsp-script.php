@@ -125,7 +125,8 @@ function nbsp2preposition($input_text) {
     return strtr($input_text, $nbspStrings);
 }
 
-// This can take any text, be it $_GET or $_POST value from PHP form or any other text
+// This can take $_GET or $_POST value from PHP form or any other text
+// You will probably want to remove this line and use just the function for your purpose
 echo nbsp2preposition($_GET["originalText"]);
 
 ?>
